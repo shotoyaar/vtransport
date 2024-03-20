@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
 import { CiMenuFries } from 'react-icons/ci';
-//import logo from '../assets/vit_logo.png';
 
 const Navbar = () => {
   const [click, setClick] = useState(false);

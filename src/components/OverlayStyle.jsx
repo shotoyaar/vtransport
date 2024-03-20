@@ -36,7 +36,7 @@ export default function OverlayStyle() {
     };
 
     return (
-        <div className="OverlayStyle">
+        <div className="OverlayStyle" >
             <TitleCard />
             <div style={imageStyle}></div>
             <div style={dashBoard}>
