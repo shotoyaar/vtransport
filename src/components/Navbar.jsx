@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
 import { CiMenuFries } from 'react-icons/ci';
-//import logo from '@/assets/vit_logo.png';
+import logo from '../assets/vit_logo.png';
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className='h-10vh flex justify-between z-50 text-white lg: py-2 px-20  bg-slate-700 bg-opacity-100 '>
         <div className='flex items-center flex-1'>
           <Link to='/' className="cursor-pointer" onClick={closeNavbar}>
-            <img src= "vit_logo.png" alt="VIT Logo" className="h-16 w-32" />
+            <img src={logo} alt="VIT Logo" className="h-16 w-32" />
           </Link>
         </div>
         <div className='lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden'>
@@ -53,6 +53,13 @@ const Navbar = () => {
               </Link>
             </ul>
           </div>
+        </div>
+        <div className="flex items-center"> {/* This div contains the Login button */}
+          <Link to='/login' className='nav-link' onClick={closeNavbar}>
+            <button className='bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded'>
+              Login
+            </button>
+          </Link>
         </div>
         <div>
           {click && content}
