@@ -32,10 +32,11 @@ export default function OverlayStyle() {
         padding: '2.5vw',
         borderRadius: '3.75vw',
         zIndex: 1,
+        marginLeft: '100px',
     };
 
     return (
-        <div className="OverlayStyle" >
+        <div className="OverlayStyle">
             <TitleCard />
             <div style={imageStyle}></div>
             <div style={dashBoard}>
